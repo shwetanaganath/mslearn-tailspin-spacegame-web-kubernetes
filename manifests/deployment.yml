@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
         - name: web
-          image: tailspinspacegameprod.azurecr.io/web
+          image: mygameregistry987.azurecr.io/web
+          imagePullPolicy: Always
+          command: ["echo", "SUCCESS"] 
           ports:
           - containerPort: 80
 ---
@@ -34,6 +36,8 @@ spec:
     spec:
       containers:
         - name: leaderboard
-          image: tailspinspacegameprod.azurecr.io/leaderboard
+          image: mygameregistry987.azurecr.io/web
+          imagePullPolicy: Always
+          command: ["echo", "SUCCESS"] leaderboard
           ports:
           - containerPort: 80
