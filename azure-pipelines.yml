@@ -39,7 +39,7 @@ stages:
           $(tag)
     
     - publish: '$(Build.SourcesDirectory)/manifests'
-    container: manifests
+      artifact: manifests
     
 
 - stage: 'Deploy'
