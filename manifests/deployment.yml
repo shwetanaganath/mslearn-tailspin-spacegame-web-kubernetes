@@ -15,8 +15,6 @@ spec:
       containers:
         - name: web
           image: mygameregistry987.azurecr.io/web
-          imagePullPolicy: Always
-          command: ["echo", "SUCCESS"] 
           ports:
           - containerPort: 80
 ---
@@ -37,7 +35,5 @@ spec:
       containers:
         - name: leaderboard
           image: mygameregistry987.azurecr.io/leaderboard
-          imagePullPolicy: Always
-          command: ["echo", "SUCCESS"] leaderboard
           ports:
           - containerPort: 80
