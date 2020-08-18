@@ -36,7 +36,7 @@ spec:
     spec:
       containers:
         - name: leaderboard
-          image: mygameregistry987.azurecr.io/web
+          image: mygameregistry987.azurecr.io/leaderboard
           imagePullPolicy: Always
           command: ["echo", "SUCCESS"] leaderboard
           ports:
